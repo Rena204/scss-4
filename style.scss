@@ -1,0 +1,355 @@
+$colorSelectSite: #F16D7F;
+$widthSite: 1140px;
+$backBlock: #222;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+summary {
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.center {
+    padding-left: calc(50% - $widthSite / 2);
+    padding-right: calc(50% - $widthSite / 2);
+}
+
+.header {
+    min-height: 75px;
+    max-width: 1600px;
+
+    background: $backBlock;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &__left {
+        display: flex;
+        align-items: baseline;
+        gap: 41px;
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 33px;
+    }
+}
+
+.top-head{
+    background: #F8F3F4;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__heading{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: $colorSelectSite;
+    }
+}
+
+.registration {
+    margin-top: 64px;
+    margin-bottom: 96px;
+    display: flex;
+    gap: 128px;
+}
+
+.info {
+
+    &__name {
+        color: $backBlock;
+        font-family: Lato;
+        font-size: 16px;
+        font-style: normal;
+        line-height: normal;
+        font-weight: 300;
+        
+    }
+
+    &__input {
+        display: block;
+        color: #B1B1B1;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-top: 20px;
+        border: 1px solid #A4A4A4;
+        padding: 13px 17px 16px ;
+        width: 360px;
+    }
+
+    &__generation {
+        margin-top: 31px;
+        margin-bottom: 31px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__gender {
+        width: 17px;
+        height: 17px;
+        flex-shrink: 0;
+        margin-right: 10px;
+    }
+
+    &__gender+label {
+        color: $backBlock;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        border: 1px solid #A4A4A4;
+        border: none;
+        margin-right: 20px;
+    }
+
+    &__gender[type='radio'] {
+        
+        accent-color: $colorSelectSite;
+    }
+
+    &__gender:checked {
+        background-color: $colorSelectSite;
+        background: $colorSelectSite;
+        color: $colorSelectSite;
+    }
+
+    &__text {
+        color: #B1B1B1;
+        max-width: 359px;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-top: 15px;
+    }
+
+    &_btn {
+        color: #FFF;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 16px 20px 17px 29px;
+        background-color: $colorSelectSite;
+        border: 1px $colorSelectSite solid;
+        margin-top: 39px;
+        transition: all 0.3s;
+    }
+
+    &_btn:hover {
+        color: #FFF;
+        background-color: $colorSelectSite;
+        border-color: #FFF;
+    }
+
+    &_btn svg {
+        margin-left: 20px;
+        
+    }
+    
+}
+
+.loyalty {
+    color: $backBlock;
+    font-size: 24px;
+    font-style: normal;
+    line-height: normal; 
+    font-weight: 300;
+       
+
+    &__subtitle {
+        color: $backBlock;
+        font-size: 24px;
+        font-style: normal;
+        line-height: normal;
+        font-weight: 300;
+        margin-bottom: 23px;
+    }
+
+    &__text {
+        max-width: 652px;
+        margin-bottom: 22px;
+    }
+
+    &__list {
+        padding-left: 0;
+        list-style-type: none;
+        list-style-image: url(img/check.svg);
+        margin-left: 23px;
+    }
+
+    &_item {
+        margin-bottom: 16px;
+        padding-left: 23px;
+     
+    }
+}
+
+
+.subscribe {
+    min-height: 448px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(img/fon.svg);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 223.26px;
+
+    &__staff {
+        text-align: center;
+
+        &__figure-text {
+            margin-top: 30px;
+
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+
+            color: $backBlock;
+        }
+    }
+
+    &__input-email {
+        display: grid;
+        justify-items: center;
+
+        &__text {
+            font-family: 'Lato';
+            font-style: normal;
+            font-size: 18px;
+            line-height: 167.2%;
+            text-align: center;
+            color: $backBlock;
+
+            margin-bottom: 32px;
+        }
+
+        &__title {
+            font-weight: 600;
+            font-size: 24px;
+        }
+
+        &__submit {
+            display: flex;
+
+            &__subscribe {
+                padding: 0 20px 0 20px;
+                height: 49px;
+                border-radius: 30px 0 0 30px;
+
+                border: none;
+                width: 256px;
+                background: #E1E1E1;
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                display: flex;
+                color: $backBlock;
+                opacity: 0.67;
+            }
+
+            &__btn {
+                border-radius: 0 30px 30px 0;
+
+                border: none;
+                width: 100px;
+                background: $colorSelectSite;
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                display: flex;
+                text-align: center;
+                color: #FFFFFF;
+                justify-content: center;
+
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+
+.footer {
+    background: $backBlock;
+
+    min-height: 79px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &__text {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FBFBFB;
+    }
+
+    &__items {
+        display: flex;
+        gap: 7.29px;
+
+        &__item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 32px;
+            height: 32px;
+            background-color: white;
+        }
+
+        &__item:hover {
+            background-color: $colorSelectSite;
+        }
+
+        &__item:hover path {
+            fill: white;
+        }
+    }
+}
